@@ -1,14 +1,29 @@
-'use client';
+"use client";
 
-import { useState } from "react";
+import { use, useState } from "react";
 
 export default function HomePage() {
   // react hooks
   const [code, setCode] = useState("");
-  
+  const [loading, setLoading] = useState(false);
+  const [explanation, setExplanation] = useState("");
 
-  // logic
-  async function handleExplainCode() {}
+  async function handleExplainCode() {
+    setLoading(true);
+    setExplanation("");
+
+    // api call
+    const response = await fetch("/api/explain", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ code }),
+    });
+
+    // return response from openAI API
+    const data = await response.json();
+    setExplanation(data.explanation || "No explanation");
+    setLoading(false);
+  }
 
   return (
     <main className="p-6 max-w-3xl mx-auto">
@@ -21,7 +36,20 @@ export default function HomePage() {
         placeholder="Paste code here... "
       />
 
-      <button></button>
+      <button
+        className="bg-blue-600 text-white px-4 py-2 rounded disabled:opacity-50"
+        onClick={handleExplainCode}
+        disabled={Boolean(loading || !code.trim())} // button is disabled if there's no code or if it's loading
+      >
+        {loading ? "Analysing code..." : "Explain Code"}
+      </button>
+
+      {explanation && (
+        <div className="mt-6 p-4 bg-gray-100 border rounded">
+          <h2 className="text-xl font-semibold mb-2"></h2>
+          <pre className="whitespace-pre-wrap"></pre>
+        </div>
+      )}
     </main>
   );
 }
