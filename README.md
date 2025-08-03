@@ -35,4 +35,4 @@ Loading state:
 
 - Next.js (App Router)
 - TypeScript
-- OpenAI API
+- [OpenAI API](https://platform.openai.com/docs/quickstart?api-mode=responses)
