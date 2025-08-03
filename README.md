@@ -1,17 +1,22 @@
 # Colton's AI Code Explainer 🤖
 
-A small web app that uses AI to explain code snippets — for free — using the [OpenRouter](https://openrouter.ai/) API.
+A small web app that uses AI to explain code snippets using the [OpenRouter](https://openrouter.ai/) API.
 
-Built with Next.js, TypeScript, and the App Router. You can paste in code, hit "Explain", and get a simple breakdown of what it does.
+Built with Next.js, TypeScript, and the App Router. You can paste in code, hit "Explain Code", and get a simple breakdown of what it does.
 
 ### UI
 
 Empty textbox:
+
 ![](/public/images/homePage.png)
+
 Loading state:
+
 ![](/public/images/loadingState.png)
 
----
+Explanation / Output:
+
+## ![](/public/images/explanation.png)
 
 ### Getting Started
 
@@ -37,9 +42,8 @@ Loading state:
 ### API Model
 
 This project currently uses:
-	•	Model: meta-llama/llama-3-8b-instruct (free)
-	•	Endpoint: https://openrouter.ai/api/v1/chat/completions
-
+• Model: meta-llama/llama-3-8b-instruct (free)
+• Endpoint: https://openrouter.ai/api/v1/chat/completions
 
 ### Tech Stack
 
@@ -47,4 +51,3 @@ This project currently uses:
 - TypeScript
 - Axios
 - [OpenRouter API](https://openrouter.ai/docs/quickstart)
-
