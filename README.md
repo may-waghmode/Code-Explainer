@@ -1,24 +1,46 @@
-# Colton's AI Code Explainer 🤖
+# 🤖 Colton's AI Code Explainer
 
-A small web app that uses AI to explain code snippets using the [OpenRouter](https://openrouter.ai/) API.
+A lightweight full-stack web app that explains code snippets in plain English using AI via the [OpenRouter](https://openrouter.ai/) API.
 
-Built with Next.js, TypeScript, and the App Router. You can paste in code, hit "Explain Code", and get a simple breakdown of what it does.
+Paste code → Click “Explain Code” → Get a clear breakdown of what the code does.
 
-### UI
+Built with **Next.js (App Router)**, **TypeScript**, and the **meta-llama/llama-3-8b-instruct** model.
 
-Empty textbox:
+<br/>
+<br/>
+
+## Features
+
+- Accepts any code snippet via textarea
+- Sends the snippet to a free AI model (LLaMA 3 via OpenRouter)
+- Returns a simple explanation of what the code does
+- Responsive UI with loading state and disabled button handling
+- API key handled securely with environment variables
+
+<br/>
+<br/>
+
+
+## UI Preview
+
+**Empty Textbox:**
 
 ![](/public/images/homePage.png)
 
-Loading state:
+**Loading State:**
 
 ![](/public/images/loadingState.png)
 
-Explanation / Output:
+**Explanation Output:**
 
-## ![](/public/images/explanation.png)
+![](/public/images/explanation.png)
 
-### Getting Started
+
+<br/>
+<br/>
+
+
+## 🚀 Getting Started
 
 1. Clone the repo
 2. Install dependencies
@@ -37,17 +59,49 @@ Explanation / Output:
    npm run dev
    ```
 
+ ### How It Works
+ - Frontend: User enters code in a textarea and clicks a button to trigger explanation.
+ - Backend: A Next.js API route sends the code to OpenRouter’s free meta-llama/llama-3-8b-instruct model and returns the explanation.
+
+
+<br/>
+<br/>
+
 ---
+
+<br/>
 
 ### API Model
 
 This project currently uses:
 • Model: meta-llama/llama-3-8b-instruct (free)
 • Endpoint: https://openrouter.ai/api/v1/chat/completions
+<br/>
+<br/>
+
+---
+
+<br/>
 
 ### Tech Stack
+
 
 - Next.js (App Router)
 - TypeScript
 - Axios
 - [OpenRouter API](https://openrouter.ai/docs/quickstart)
+   - meta-llama/llama-3-8b-instruct (free)
+
+<br/>
+<br/>
+
+---
+
+<br/>
+
+### 🛠️ Future Ideas
+- [ ] Add syntax highlighting to the explanation output
+- [ ] Support multiple programming languages
+- [ ] Integrate alternative models (e.g., GPT-4, Claude)
+- [ ] Deploy with Vercel and add shareable links
+- [ ] Add unit tests and error handling improvements
