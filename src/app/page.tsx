@@ -1,7 +1,9 @@
 // Client Component
 "use client";
 
-import { use, useState } from "react";
+import { useState } from "react";
+import Footer from "./footer";
+import "font-awesome/css/font-awesome.min.css";
 
 export default function HomePage() {
   // react hooks
@@ -38,11 +40,21 @@ export default function HomePage() {
       />
 
       <button
-        className="bg-blue-600 text-white px-4 py-2 rounded disabled:opacity-50"
+        className="buttonload bg-blue-600 text-white px-4 py-2 rounded disabled:opacity-50"
         onClick={handleExplainCode}
         disabled={Boolean(loading || !code.trim())} // button is disabled if there's no code or if loading
       >
-        {loading ? "Analysing code..." : "Explain Code"}
+        {loading ? (
+          <>
+            <i
+              className="fa fa-spinner fa-spin"
+              style={{ marginRight: "8px" }}
+            />{" "}
+            Analysing code...
+          </>
+        ) : (
+          "Explain Code"
+        )}
       </button>
 
       {/* Code explanation output */}
@@ -52,6 +64,7 @@ export default function HomePage() {
           <pre className="whitespace-pre-wrap">{explanation}</pre>
         </div>
       )}
+      <Footer />
     </main>
   );
 }
