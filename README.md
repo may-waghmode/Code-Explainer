@@ -1,10 +1,15 @@
 # 🤖 Colton's AI Code Explainer
 
+[**See the full working app here** 🔗](https://ai-code-explainer-sigma.vercel.app)
+
+![Gif](/public/gif/aiCodeExplainer.gif)
+
+
 A lightweight full-stack web app that explains code snippets in plain English using AI via the [OpenRouter](https://openrouter.ai/) API.
 
 Paste code → Click “Explain Code” → Get a clear breakdown of what the code does.
 
-Built with **Next.js (App Router)**, **TypeScript**, and the **meta-llama/llama-3-8b-instruct** model.
+Built with **Next.js (App Router)**, **TypeScript**, and the **meta-llama/llama-3-8b-instruct** model, deployed via Vercel.
 
 <br/>
 <br/>
@@ -91,6 +96,7 @@ This project currently uses:
 - Axios
 - [OpenRouter API](https://openrouter.ai/docs/quickstart)
    - meta-llama/llama-3-8b-instruct (free)
+- Deployed and hosted via Vercel
 
 <br/>
 <br/>
@@ -100,8 +106,7 @@ This project currently uses:
 <br/>
 
 ### 🛠️ Future Ideas
+- [x] Deploy with Vercel and add shareable links
+- [x] Add loading icon to UI
 - [ ] Add syntax highlighting to the explanation output
-- [ ] Support multiple programming languages
-- [ ] Integrate alternative models (e.g., GPT-4, Claude)
-- [ ] Deploy with Vercel and add shareable links
 - [ ] Add unit tests and error handling improvements
