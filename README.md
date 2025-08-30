@@ -1,15 +1,15 @@
 # 🤖 Mayur's AI Code Explainer
 
-[**See the full working app here** 🔗](https://ai-code-explainer-sigma.vercel.app)
+[**See the full working app here** 🔗](https://vercel.com/mayur-waghmodes-projects/code-explainer/4Aqq1S66LgkKzJF91xTaTu2p5c27)
 
-![Gif](/public/gif/aiCodeExplainer.gif)
-
+![App Screenshot](public/images/Screenshot%202025-08-30%20121118.png)
+![App Screenshot](public/images/Screenshot%202025-08-30%20121138.png)
 
 A lightweight full-stack web app that explains code snippets in plain English using AI via the [OpenRouter](https://openrouter.ai/) API.
 
 Paste code → Click “Explain Code” → Get a clear breakdown of what the code does.
 
-Built with **Next.js (App Router)**, **TypeScript**, and the **meta-llama/llama-3-8b-instruct** model, deployed via netlify.
+Built with **Next.js (App Router)**, **TypeScript**, and the **meta-llama/llama-3-8b-instruct** model, deployed via Vercel.
 
 <br/>
 <br/>
@@ -26,23 +26,8 @@ Built with **Next.js (App Router)**, **TypeScript**, and the **meta-llama/llama-
 <br/>
 
 
-## UI Preview
-
-**Empty Textbox:**
-
-![](/public/images/homePage.png)
-
-**Loading State:**
-
-![](/public/images/loadingState.png)
-
-**Explanation Output:**
-
-![](/public/images/explanation.png)
 
 
-<br/>
-<br/>
 
 
 ## 🚀 Getting Started
