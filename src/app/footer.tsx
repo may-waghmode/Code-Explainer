@@ -27,7 +27,7 @@ export default function Footer() {
           }}
         >
           <p>
-            © {new Date().getFullYear()} Colton Randall • Powered by{" "}
+            © {new Date().getFullYear()} Mayur Waghmode • Powered by{" "}
             <a
               href="https://nextjs.org"
               target="_blank"
@@ -37,15 +37,8 @@ export default function Footer() {
               Next.js
             </a>
             ,{" "}
-            <a
-              href="https://vercel.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ color: "grey", fontWeight: "bold" }}
-            >
-              Vercel
-            </a>
-            ,{" "}
+            
+            {" "}
             <a
               href="https://openrouter.ai"
               target="_blank"
@@ -58,7 +51,7 @@ export default function Footer() {
           </p>
           <p>
             <a
-              href="https://github.com/ColtonRandall"
+              href="https://github.com/may-waghmode"
               target="_blank"
               rel="noopener noreferrer"
               style={{ color: "#6cc644", fontWeight: "bold" }}

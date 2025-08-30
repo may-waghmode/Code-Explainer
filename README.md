@@ -1,4 +1,4 @@
-# 🤖 Colton's AI Code Explainer
+# 🤖 Mayur's AI Code Explainer
 
 [**See the full working app here** 🔗](https://ai-code-explainer-sigma.vercel.app)
 
@@ -9,7 +9,7 @@ A lightweight full-stack web app that explains code snippets in plain English us
 
 Paste code → Click “Explain Code” → Get a clear breakdown of what the code does.
 
-Built with **Next.js (App Router)**, **TypeScript**, and the **meta-llama/llama-3-8b-instruct** model, deployed via Vercel.
+Built with **Next.js (App Router)**, **TypeScript**, and the **meta-llama/llama-3-8b-instruct** model, deployed via netlify.
 
 <br/>
 <br/>
