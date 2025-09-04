@@ -1,8 +1,9 @@
 # 🤖 Mayur's AI Code Explainer
 
-[**See the full working app here** 🔗](https://vercel.com/mayur-waghmodes-projects/code-explainer/4Aqq1S66LgkKzJF91xTaTu2p5c27)
+[**See the full working app here** 🔗](https://code-explainer-chi.vercel.app/)
 
 ![App Screenshot](public/images/Screenshot%202025-08-30%20121118.png)
+<br><br>
 ![App Screenshot](public/images/Screenshot%202025-08-30%20121138.png)
 
 A lightweight full-stack web app that explains code snippets in plain English using AI via the [OpenRouter](https://openrouter.ai/) API.
